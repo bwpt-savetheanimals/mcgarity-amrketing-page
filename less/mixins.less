@@ -1,0 +1,11 @@
+.center(@justify: center; @align: center; @txt-position: center) {
+    justify-content: @justify;
+    align-content: @align;
+    text-align: @txt-position;
+}
+
+.position(@order: row, @align: center) {
+    display: flex;
+    flex-direction: @order;
+    align-items: @align;
+}
