@@ -2,25 +2,18 @@
 .footer {
     
     nav {
-        .position(column);
+        .position(row);
         width: 70%;
         margin: auto;
         padding: 2%;
         display: flex;
         justify-content: space-around;
 
-        @media @tablet {
-            .position(row);
-        }
-
         a {
-            color: black;
+            color: @Blue;
             text-decoration: none;
             font-size: 1.5rem;
             margin: 1%;
-            border: 1px solid black;
-            border-radius: 10%;
-            background-color: @bgBlue;
             padding: 1%;
 
             @media @tablet {

@@ -152,6 +152,7 @@ html li {
 }
 html button {
   font-family: Comfortaa, cursive;
+  font-size: 2rem;
 }
 .header nav {
   flex-direction: column;
@@ -170,13 +171,10 @@ html button {
   }
 }
 .header nav a {
-  color: black;
+  color: #007ba7;
   text-decoration: none;
   font-size: 1.5rem;
   margin: 1%;
-  border: 1px solid black;
-  border-radius: 10%;
-  background-color: #007ba7;
   padding: 1%;
 }
 @media (min-width: 500px) {
@@ -185,7 +183,7 @@ html button {
   }
 }
 .footer nav {
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   width: 70%;
   margin: auto;
@@ -193,21 +191,11 @@ html button {
   display: flex;
   justify-content: space-around;
 }
-@media (min-width: 500px) {
-  .footer nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-}
 .footer nav a {
-  color: black;
+  color: #007ba7;
   text-decoration: none;
   font-size: 1.5rem;
   margin: 1%;
-  border: 1px solid black;
-  border-radius: 10%;
-  background-color: #007ba7;
   padding: 1%;
 }
 @media (min-width: 500px) {
@@ -222,25 +210,27 @@ div {
 }
 div .header {
   padding: 0 2%;
+  border-bottom: 1px solid black;
 }
 div .body {
   margin: auto;
 }
 div img {
   width: 100%;
-  height: 10%;
+  height: 5%;
 }
 div .main {
-  margin: 2% 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 0 40% 0;
 }
 @media (min-width: 500px) {
   div .main {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0 0 15% 0;
   }
 }
 @media (min-width: 800px) {
@@ -294,6 +284,7 @@ div .reason {
 div .features {
   height: 22rem;
   color: #46792f;
+  margin: 0 0 5% 0;
   padding: 2%;
   background-color: white;
 }
@@ -314,17 +305,20 @@ div .features img {
   padding: 0 0 10% 0;
 }
 div .btn-sect {
-  display: flex;
   justify-content: space-evenly;
+  border-top: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 div .btn-sect button {
-  color: white;
-  margin: 30% 0;
-  width: 15rem;
-  height: 5rem;
-  border: 1px solid white;
+  color: #46792f;
+  margin: 5% 0 5% 0;
+  width: 20rem;
+  height: 10rem;
+  border: 1px solid #773f1a;
   border-radius: 100%;
-  background-color: orangered;
+  background-color: white;
 }
 @media (min-width: 800px) {
   div .btn-sect button {
@@ -337,8 +331,4 @@ div .btn-sect button {
     flex-direction: row;
     align-items: center;
   }
-}
-div .learn-more {
-  width: 80%;
-  margin: 0 10%;
 }
