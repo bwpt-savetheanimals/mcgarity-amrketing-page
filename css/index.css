@@ -353,6 +353,8 @@ div .about-main .member img {
 }
 @media (min-width: 801px) {
   div .about-main .member img {
+    display: flex;
+    justify-content: flex-end;
     height: 25%;
     width: 25%;
   }
