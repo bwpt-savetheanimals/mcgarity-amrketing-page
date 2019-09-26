@@ -107,10 +107,6 @@ section {
 body {
   line-height: 1;
 }
-ol,
-ul {
-  list-style: none;
-}
 blockquote,
 q {
   quotes: none;
@@ -131,23 +127,29 @@ html {
   font-family: Comfortaa, cursive;
 }
 html h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   padding: 3% 0 1% 0;
   color: #46792f;
 }
 html h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 0 0 3% 0;
+  color: #46792f;
   border-bottom: 1px solid black;
+}
+html h3 {
+  font-size: 3rem;
+  padding: 0 0 3% 0;
+  color: #46792f;
 }
 html p {
   padding: 1% 0 0 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: black;
 }
 html li {
-  padding: 1% 0 0 0;
-  font-size: 1.5rem;
+  padding: 2% 0;
+  font-size: 2rem;
   color: black;
 }
 html button {
@@ -163,7 +165,7 @@ html button {
   display: flex;
   justify-content: space-around;
 }
-@media (min-width: 500px) {
+@media (min-width: 501px) {
   .header nav {
     display: flex;
     flex-direction: row;
@@ -177,7 +179,7 @@ html button {
   margin: 1%;
   padding: 1%;
 }
-@media (min-width: 500px) {
+@media (min-width: 501px) {
   .header nav a {
     width: 80%;
   }
@@ -198,7 +200,7 @@ html button {
   margin: 1%;
   padding: 1%;
 }
-@media (min-width: 500px) {
+@media (min-width: 501px) {
   .footer nav a {
     width: 80%;
   }
@@ -219,39 +221,39 @@ div img {
   width: 100%;
   height: 5%;
 }
-div .main {
+div .home-main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 0 40% 0;
+  margin: 15% 0 45% 0;
 }
-@media (min-width: 500px) {
-  div .main {
+@media (min-width: 501px) {
+  div .home-main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0 0 15% 0;
+    margin: 15% 0;
   }
 }
-@media (min-width: 800px) {
-  div .main {
-    margin: 10% 0 0 0;
+@media (min-width: 801px) {
+  div .home-main {
+    margin: 10% 0;
   }
 }
-div .main .top-left {
+div .home-main .top-left {
   margin: 0;
   padding: 2%;
   width: 90%;
 }
-@media (min-width: 500px) {
-  div .main .top-left {
+@media (min-width: 501px) {
+  div .home-main .top-left {
     width: 40%;
   }
 }
-div .main img {
+div .home-main img {
   width: 20rem;
   height: 20rem;
-  padding: 2% 0 10% 0;
+  padding: 2% 0 5% 0;
   margin: 2% 0 2% 0;
 }
 div .top-right {
@@ -259,7 +261,7 @@ div .top-right {
   padding: 2%;
   width: 90%;
 }
-@media (min-width: 500px) {
+@media (min-width: 501px) {
   div .top-right {
     width: 40%;
   }
@@ -271,12 +273,12 @@ div .reason {
   padding: 2%;
   background-color: white;
 }
-@media (min-width: 500px) {
+@media (min-width: 501px) {
   div .reason {
     height: 30rem;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 801px) {
   div .reason {
     height: 20rem;
   }
@@ -288,12 +290,12 @@ div .features {
   padding: 2%;
   background-color: white;
 }
-@media (min-width: 500px) {
+@media (min-width: 501px) {
   div .features {
     height: 40rem;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 801px) {
   div .features {
     height: 30rem;
   }
@@ -316,19 +318,42 @@ div .btn-sect button {
   margin: 5% 0 5% 0;
   width: 20rem;
   height: 10rem;
-  border: 1px solid #773f1a;
+  border: 4px solid #773f1a;
   border-radius: 100%;
   background-color: white;
 }
-@media (min-width: 800px) {
+@media (min-width: 801px) {
   div .btn-sect button {
     margin: 10% 0;
   }
 }
-@media (min-width: 500px) {
+@media (min-width: 501px) {
   div .btn-sect {
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+}
+div .about-main .member {
+  margin: 5% 10%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: flex-start;
+  align-items: center;
+}
+@media (min-width: 801px) {
+  div .about-main .member {
+    margin: 5% 20%;
+  }
+}
+div .about-main .member img {
+  height: 50%;
+  width: 50%;
+  padding: 2% 2%;
+}
+@media (min-width: 801px) {
+  div .about-main .member img {
+    height: 25%;
+    width: 25%;
   }
 }
