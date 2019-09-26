@@ -348,11 +348,15 @@ div .about-main {
 }
 div .about-main .member {
   margin: 0 10% 5% 10%;
+  padding: 2%;
   border: 1px solid black;
   background-color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+  text-align: center;
 }
 @media (min-width: 801px) {
   div .about-main .member {
@@ -366,13 +370,4 @@ div .about-main .member img {
   height: 50%;
   width: 50%;
   padding: 2% 2%;
-}
-@media (min-width: 801px) {
-  div .about-main .member img {
-    justify-content: flex-start;
-    align-content: center;
-    text-align: center;
-    height: 25%;
-    width: 25%;
-  }
 }

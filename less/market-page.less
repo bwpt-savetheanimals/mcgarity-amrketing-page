@@ -131,9 +131,11 @@ div {
 
         .member {
             margin: 0 10% 5% 10%;
+            padding: 2%;
             border: 1px solid black;
             background-color: @White;
             .position();
+            .center(flex-start);
 
             @media @desktop {
                 margin: 5% 20%;
@@ -144,12 +146,6 @@ div {
                 height: 50%;
                 width: 50%;
                 padding: 2% 2%;
-
-                @media @desktop {
-                    .center(flex-start);
-                    height: 25%;
-                    width: 25%;
-                }
             }
         }
     }
