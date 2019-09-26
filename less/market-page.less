@@ -17,16 +17,17 @@ div {
 
     .home-main {
         .position(column);
-        margin: 15% 0 45% 0;
+        margin: 15% 0 15% 0;
         
 
         @media @tablet {
-            .position(row);
+            .position(row, flex-start);
             margin: 15% 0;
         }
 
         @media @desktop {
-            margin: 10% 0;
+            .position(row, flex-start);
+            margin: 10% 0 0 0;
         }
 
         .top-left {
@@ -58,9 +59,9 @@ div {
         }
 
         .reason {
-            height: 18rem;
+            height: 30rem;
             color: @Green;
-            margin: 15% 0 0 0;
+            margin: 20% 0 0 0;
             padding: 2%;
             background-color: @White;
 
@@ -74,18 +75,20 @@ div {
         }
 
         .features {
-            height: 22rem;
+            height: 40rem;
             color: @Green;
-            margin: 0 0 5% 0;
-            padding: 2%;
+            margin: 0 0 25% 0;
+            padding: 2% 5%;
             background-color: @White;
 
             @media @tablet {
                 height: 40rem;
+                margin: 0 0 30% 0;
             }
 
             @media @desktop {
-                height: 30rem;
+                height: 50rem;
+                margin: 0 0 20% 0;
             }
 
             img {
@@ -123,24 +126,27 @@ div {
     }
 
     .about-main {
+        padding: 5% 0;
+        background-color: @Blue;
 
         .member {
-            margin: 5% 10%;
+            margin: 0 10% 5% 10%;
             border: 1px solid black;
-            .position(flex-start, center);
+            background-color: @White;
+            .position();
 
             @media @desktop {
                 margin: 5% 20%;
             }
 
             img {
+                .center(flex-start);
                 height: 50%;
                 width: 50%;
                 padding: 2% 2%;
 
                 @media @desktop {
-                    display: flex;
-                    justify-content: flex-end;
+                    .center(flex-start);
                     height: 25%;
                     width: 25%;
                 }
