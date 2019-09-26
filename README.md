@@ -12,4 +12,3 @@ Home Page:
     Footer: "navigation bar" template style
 
 About Us Page:
-    
