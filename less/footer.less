@@ -1,13 +1,21 @@
-
-.footer {
+  
+.footer{
     
-    nav {
-        .position(row);
+    @media @desktop {
+        display: none;
+    }
+
+  nav {
+        .position(column);
+        display: flex;
+        justify-content: space-around;
         width: 70%;
         margin: auto;
         padding: 2%;
-        display: flex;
-        justify-content: space-around;
+
+        @media @tablet {
+            .position(row);
+        }
 
         a {
             color: @Blue;
@@ -15,10 +23,16 @@
             font-size: 2rem;
             margin: 1%;
             padding: 1%;
+            border-radius: 5rem;
 
             @media @tablet {
                 width: 80%;
             }
+        }
+
+        a:hover {
+            color: @White;
+            background-color: @Blue; 
         }
     }
 }
