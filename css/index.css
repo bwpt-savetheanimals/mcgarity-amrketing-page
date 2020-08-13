@@ -423,16 +423,21 @@ div .large-image {
   }
 }
 div .about-main {
-  padding-top: 20rem;
   padding: 5% 0;
   background-color: #007ba7;
 }
+@media (min-width: 801px) {
+  div .about-main {
+    padding-top: 15rem;
+  }
+}
 div .about-main .member {
+  flex-direction: column;
   margin: 0 10% 5% 10%;
   padding: 2%;
   border: 1px solid black;
   background-color: white;
-  border-radius: 5% 25%;
+  border-radius: 25% 5%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -442,6 +447,9 @@ div .about-main .member {
 }
 @media (min-width: 801px) {
   div .about-main .member {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin: 5% 20%;
   }
 }
@@ -452,4 +460,10 @@ div .about-main .member img {
   height: 50%;
   width: 50%;
   padding: 2% 2%;
+}
+@media (min-width: 801px) {
+  div .about-main .member .handle {
+    height: 20%;
+    width: 20%;
+  }
 }
