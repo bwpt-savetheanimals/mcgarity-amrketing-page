@@ -1,0 +1,78 @@
+.header-bg {
+    position: normal;
+    top: 0;
+    width: 100%;
+
+    @media @desktop {
+        position: fixed;
+    }
+}
+
+.header-bg:before {
+    content: "";
+    position: normal;
+    top: 0px;
+    left: 0px;
+    height: 70%;
+    width: 100%;
+    z-index:-1;
+    background-image: url(../images/blades-grass.jpg);
+    background-size: stretch;
+    opacity: 0.9;
+
+
+    @media @tablet {
+        height: 30%;
+    }
+
+    @media @desktop {
+        height: 25%;
+        position: fixed;
+    }
+}
+
+.header {
+    padding: 0 2%;
+    z-index: 1;
+    background-image: url(../images/blades-grass.jpg);
+
+    @media @desktop {
+       background-image: none;
+    }
+
+  nav {
+        .position(column);
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        padding: 2%;
+
+        @media @tablet {
+            .position(row);
+        }
+
+        a {
+            width: 90%;
+            margin: 2%;
+            padding: .5%;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 200;
+            color: @White;
+            background-color: @Blue;
+            border: .01em solid black; 
+            border-radius: 5rem;
+
+            @media @tablet {
+                width: 20%;
+                margin: 0 5%;
+            }
+        }
+
+        a:hover {
+            color: @Blue;
+            background-color: @White; 
+        }
+    }
+}

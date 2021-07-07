@@ -1,0 +1,171 @@
+div {
+    .center();
+
+    .body {
+        margin: auto;
+    }
+
+    img {
+        height: 5%;
+    }
+
+    .home-main {
+        .position(column);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 25%, rgba(0,123,167,1) 100%);
+
+        @media @desktop {
+            margin-top: 20rem;
+        }
+
+        .top {
+            margin: 0;
+            padding: 2%;
+
+                @media @tablet {
+                    width: 40%;
+                }
+            }
+
+            img {
+                width: 20rem;
+                height: 20rem;
+
+                @media @tablet {
+                    width: 30rem;
+                    height: 30rem;
+                }
+
+                @media @desktop {
+                    width: 50rem;
+                    height: 50rem;
+                }
+            }
+        }
+    
+        .middle {
+            width: 80%;
+
+            @media @tablet {
+                width: 60%;
+            }
+
+            @media @desktop {
+                width: 70%;
+            }
+        }
+
+        .reason {
+            height: 50rem;
+            color: @Green;
+            padding: 5%;
+            background-color: @White;
+            border-radius: 25px 25px 0 0;
+
+            @media @tablet {
+                height: 55rem;
+            }
+
+            @media @desktop {
+                height: 30rem;
+            }
+        }
+
+        .features {
+            height: 65rem;
+            color: @Green;
+            padding: 5%;
+            background-color: @White;
+            border-radius: 0 0 25px 25px;
+
+            ul {
+                .line-left();
+            }
+
+            @media @tablet {
+                height: 65rem;
+            }
+
+            @media @desktop {
+                height: 50rem;
+            }
+        }
+
+
+    .btn-sect {
+        display: flex;
+        justify-content: space-evenly;
+        .position(column);
+        background-color: @Blue;
+
+        button {
+            color: @Green;
+            margin: 5% 0 5% 0;
+            width: 17rem;
+            height: 7rem;
+            border: .2rem solid black;
+            border-radius: 100px;
+            background-color: @White;
+
+            @media @desktop {
+                margin: 10% 0;
+            }
+        }
+
+        button:hover {
+            color: @White;
+            background-color: @Green;
+
+        }
+
+        @media @tablet {
+            .position(row, center);
+        }
+    }
+
+    .large-image {
+        background-color: @Blue;
+        width: 100%;
+        height: 20rem;
+
+        @media @tablet {
+            height: 30rem;
+        }
+        @media @desktop {
+            height: 55rem;
+        }
+    }
+
+    .about-main {
+        padding: 5% 0;
+        background-color: @Brown;
+
+        @media @desktop {
+            padding-top: 15rem;
+        }
+
+        .member {
+            margin: 0 10% 5% 10%;
+            padding: 2%;
+            border: 1px solid black;
+            border-radius: 100px 50px;
+
+            @media @desktop {
+                .position(column);
+            }
+
+            img {
+                .center(flex-start);
+                height: 50%;
+                width: 50%;
+                padding: 2% 2%;
+            }
+
+            .handle {
+                @media @desktop {
+                    height: 10%;
+                    width: 10%;
+                }
+            }
+        }
+    }
+}
